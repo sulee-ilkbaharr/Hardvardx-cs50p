@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Debug files
+*.swp
+*.pid
+
+# Temp files
+*.tmp
+*.temp
+
+# Dist directory
+dist/
+
+# MacOS specific files
+.DS_Store
