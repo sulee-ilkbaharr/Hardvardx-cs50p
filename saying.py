@@ -10,3 +10,5 @@ def hello(name):
 def goodby(name):
     print(f"goodby, {name}")
     
+if __name__ == "__main__":
+    main()
