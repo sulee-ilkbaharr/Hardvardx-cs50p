@@ -1,5 +1,6 @@
-name = input("what is your name ?")
-fromm= input("where are u from?")
-with open("student.csv", "a") as file:
-    file.write(f"{name},{fromm}\n")
-        
+import csv
+name=input("what is your name?")
+home=input("what is your home?")
+with open("student.csv","a") as file:
+    writer=csv.DictWriter(file, fieldnames=["name","home"])
+    writer.writerow([name,home])
