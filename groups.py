@@ -7,7 +7,7 @@ def main():
     
     match = re.search(pattern,number)
     if match:
-        country_code = match.group(1)
+        country_code = match.group("country_group")
         print(location[country_code])
     else:
         print("Invalid")
