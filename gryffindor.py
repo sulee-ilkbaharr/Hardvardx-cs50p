@@ -11,9 +11,14 @@ students=[
 # for gryffindor in sorted(gryffindor):
 #     print(gryffindor)
 
-def is_gryffindor(s):
-    return s["house"]=="Gryffindor"
-gryffindors = filter(is_gryffindor,students)
+# def is_gryffindor(s):
+#     return s["house"]=="Gryffindor"
+# gryffindors = filter(is_gryffindor,students)
 
-for gryffindor in sorted(gryffindors,key=lambda s:s["name"]):
-    print(gryffindor["name"])
+# for gryffindor in sorted(gryffindors,key=lambda s:s["name"]):
+#     print(gryffindor["name"])
+
+students=["Hermonie", "Harry", "Ron"]
+
+gryffindor={ student : "Gryffindor" for student in students}
+print(gryffindor)
